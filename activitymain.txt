@@ -11,7 +11,7 @@
         android:id="@+id/toDoListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/darker_gray"
         android:padding="8dp"
         android:text="@string/personal_reminder"
@@ -19,7 +19,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,33 +28,39 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
-        android:hint="Enter task"
+        android:hint="@string/enter_task"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/scheduleEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Enter schedule"
+        android:hint="@string/enter_schedule"
         android:focusable="false"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskEditText" />
+        app:layout_constraintTop_toBottomOf="@id/taskEditText"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="TextFields" />
 
     <Button
         android:id="@+id/chooseDateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="12dp"
-        android:text="Choose Date"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scheduleEditText" />
 
@@ -63,21 +69,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:hint="Enter reminder"
+        android:hint="@string/enter_reminder"
         android:focusable="false"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chooseDateButton" />
+        app:layout_constraintTop_toBottomOf="@id/chooseDateButton"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="TextFields" />
 
     <Button
         android:id="@+id/chooseTimeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="8dp"
-        android:text="Choose Time"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/choose_time"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/reminderEditText" />
 
@@ -85,9 +94,9 @@
         android:id="@+id/saveInputButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="220dp"
-        android:text="Save Input"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="144dp"
+        android:text="@string/save_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseTimeButton" />
 
@@ -95,7 +104,7 @@
         android:id="@+id/inputDisplayTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:text=""
         android:textAppearance="?android:attr/textAppearanceMedium"
         app:layout_constraintEnd_toEndOf="parent"
