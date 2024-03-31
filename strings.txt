@@ -2,14 +2,14 @@
     <string name="app_name">Personal Assistant"</string>
 
 
+
+    <string name="personal_reminder">Personal Reminder</string>
     <string name="enter_task">Enter task</string>
     <string name="enter_schedule">Enter schedule</string>
     <string name="choose_date">Choose Date</string>
-    <string name="choose_time">Choose Time</string>
-    <string name="save_input">Save Input</string>
     <string name="enter_reminder">Enter reminder</string>
-    <string name="personal_reminder">Personal Reminder</string>
-
+    <string name="save_input">Save Input</string>
+    <string name="choose_time">Choose Time</string>
 
 
 </resources>
