@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- Your other application components such as activities, services, receivers, etc. -->
+       
 
         <activity
             android:name=".MainActivity"
@@ -34,7 +34,7 @@
 
 
 
-        <!-- Other components such as services, receivers, etc. -->
+ 
 
     </application>
 
