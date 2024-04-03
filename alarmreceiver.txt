@@ -9,10 +9,7 @@ import android.widget.Toast;
 public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        // This method is called when the BroadcastReceiver is receiving an Intent broadcast.
-
-        // You can put your alarm handling logic here, such as showing a notification or playing a sound.
-        // For now, let's just display a toast message.
+        
         Toast.makeText(context, "Alarm Triggered!", Toast.LENGTH_SHORT).show();
         Log.d("AlarmReceiver", "Alarm Triggered!");
     }
