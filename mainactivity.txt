@@ -107,28 +107,27 @@ public class MainActivity extends AppCompatActivity {
 
         inputDisplayTextView.setText(displayText);
 
-        // Clear input fields after saving
+       
         taskEditText.getText().clear();
         scheduleEditText.getText().clear();
         reminderEditText.getText().clear();
 
-        // Set the alarm
+       
         setAlarm();
     }
 
     private void setAlarm() {
-        // Get AlarmManager instance
+        
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-        // Create an Intent to be broadcasted when the alarm triggers
+        
         Intent alarmIntent = new Intent(this, AlarmReceiver.class);
         alarmIntent.putExtra("message", "It's time to do your task!");
 
-        // Create a PendingIntent to be triggered when the alarm goes off
+       
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        // Set the alarm using AlarmManager
-        // In this example, we set it to trigger after 10 seconds, you can set your desired time
+       
         long triggerTimeInMillis = System.currentTimeMillis() + 10000; // 10 seconds from now
         alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTimeInMillis, pendingIntent);
     }
